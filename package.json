@@ -5,6 +5,15 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^8.2.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -16,5 +25,8 @@
   "editorconfig-cli": [
     "*.json",
     "source/*.html"
-  ]
+  ],
+  "dependencies": {
+    "save-dev": "^2.0.0"
+  }
 }
