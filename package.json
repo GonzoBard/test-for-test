@@ -9,8 +9,8 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
-    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "run-sequence": "^2.2.1",
@@ -20,11 +20,12 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "test": "npm run editorconfig"
+    "test": "npm run editorconfig",
+    "build": "gulp build"
   },
   "editorconfig-cli": [
     "*.json",
-    "source/*.html"
+    "src/html/*"
   ],
   "dependencies": {
     "save-dev": "^2.0.0"
