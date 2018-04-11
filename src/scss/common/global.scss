@@ -1,8 +1,4 @@
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   @include fonts(15px, normal, 400, normal, $font-color__body);
-
-  box-shadow: 0 1px 1px 0 red;
-
-  display: flex;
 }
