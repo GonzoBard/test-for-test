@@ -3,9 +3,12 @@
 @import 'common/config';
 @import 'common/mixins';
 @import 'common/global';
+@import "blocks/btn";
 @import 'blocks/page-header';
 @import "blocks/main-nav";
 @import "blocks/site-nav";
 @import "blocks/page-main";
 @import "blocks/catalog-sections";
+@import "blocks/product-of-the-week";
+@import "blocks/advantages";
 @import "blocks/page-footer";
