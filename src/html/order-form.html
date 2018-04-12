@@ -99,16 +99,32 @@
           </ul>
         </li>
 
-        <li class="form-group" aria-label="Группа «»">
+        <li class="form-group" aria-label="Группа «Контакты»">
           <ul class="form-group__list" aria-label="Список элементов группы">
-            <li class="form-group__item form-group__item--title"></li>
-            <li class="form-group__item"></li>
+            <li class="form-group__item">
+              <label for="form-group__item-contacts--phone">Тел</label>
+              <input type="tel" name="contacts[phone]" placeholder="+7 XXX XX XX*" id="form-group__item-contacts--phone" required>
+            </li>
+            <li class="form-group__item">
+              <label for="form-group__item-contacts--email">E-mail</label>
+              <input type="email" name="contacts[email]" placeholder="Ваш Email*" id="form-group__item-contacts--email" required>
+            </li>
+          </ul>
+        </li>
+
+        <li class="form-group" aria-label="Группа «Дополнительно»">
+          <ul class="form-group__list" aria-label="Список элементов группы">
+            <li class="form-group__item">
+              <label for="form-group__item-extra">Доп</label>
+              <textarea name="extra" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу" id="form-group__item-extra"></textarea>
+            </li>
           </ul>
         </li>
 
       </ul>
 
-
+      <p class="order-form__info">*Поля обязательны для заполнения</p>
+      <button class="btn btn--usual">Отправить заказ</button>
     </form>
 
   </section>
