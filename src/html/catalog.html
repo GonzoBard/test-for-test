@@ -9,5 +9,79 @@
 
 <h1 class="visually-hidden">Каталог магазина «Мишка»</h1>
 
+<header class="page-header">
+  <nav class="main-nav">
+    <h2 class="visually-hidden">Основная навигация</h2>
+    <a class="page-header__logo" href="index.html">
+      <img src="img/page-header__logo-mishka-mobile.svg" alt="Логотип магазина «Мишка»" width="86" height="35">
+    </a>
+    <ul class="site-nav" aria-label="Главная навигация">
+      <li class="site-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="site-nav__item"><a href="order-form.html">Вязание на заказ</a></li>
+      <li class="site-nav__item"><a href="#">Поиск по сайту</a></li>
+      <li class="site-nav__item"><a href="#">Корзина: пока пуста</a></li>
+    </ul>
+  </nav>
+  <p class="page-header__info">
+    Бесплатна доставка по России
+  </p>
+</header>
+
+<main class="page-main">
+  <p class="page-main__title">
+    Каталог товаров
+  </p>
+
+  <section class="catalog">
+    <h2 class="visually-hidden">Каталог</h2>
+
+    <ul class="catalog__list">
+      <li class="catalog-item">
+        <a class="catalog-item__pic" href="#" aria-label="Подробное описание товара">
+          <img src="img/catalog-item__pic-bunny-jump.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+        </a>
+        <p class="catalog-item__name">Зайчик-попрыгайчик</p>
+        <p class="catalog-item__parameters">Рост 30 см, вес 200 г</p>
+        <div class="catalog-item__price-wrap">
+          <p class="catalog-item__price">1 200 руб.</p>
+          <button class="catalog-item__btn-basket" aria-label="Добавить в корзину">
+            <img src="img/site-nav__item-icon-basket.svg" alt="Добавить в корзину">
+          </button>
+        </div>
+      </li>
+
+      <li class="catalog-item">
+        <a class="catalog-item__pic" href="#" aria-label="Подробное описание товара">
+          <img src="img/catalog-item__pic-laundry-basket.jpg" alt="Корзинка для белья" width="260" height="195">
+        </a>
+        <p class="catalog-item__name">Корзинка для белья</p>
+        <p class="catalog-item__parameters">Диаметр 15 см, высота 10 см</p>
+        <div class="catalog-item__price-wrap">
+          <p class="catalog-item__price">690 руб.</p>
+          <button class="catalog-item__btn-basket" aria-label="Добавить в корзину">
+            <img src="img/site-nav__item-icon-basket.svg" alt="Добавить в корзину">
+          </button>
+        </div>
+      </li>
+
+      <li class="catalog-item">
+        <a class="catalog-item__pic" href="#" aria-label="Подробное описание товара">
+          <img src="img/catalog-item__pic-large-toy-basket.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+        </a>
+        <p class="catalog-item__name">Большая корзинка для игрушек</p>
+        <p class="catalog-item__parameters">Диаметр 30 см, высота 30 см</p>
+        <div class="catalog-item__price-wrap">
+          <p class="catalog-item__price">1 500 руб.</p>
+          <button class="catalog-item__btn-basket" aria-label="Добавить в корзину">
+            <img src="img/site-nav__item-icon-basket.svg" alt="Добавить в корзину">
+          </button>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+</main>
+
 </body>
 </html>
