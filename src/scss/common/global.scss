@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', Arial, sans-serif;
-  @include fonts(15px, normal, 400, normal, $font-color__body);
+  @include fonts(15px, normal, 400, normal, $color__font-body);
 }
 
 /*

@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 20px;
+
+  border: 2px solid $color__font-body;
+  background-color: $color__white;
+
+  @include fonts(17px, 20px, 700, normal, $color__font-body);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $color__font-body;
+    color: $color__white;
+  }
+  &:active {
+    background-color: $color__font-body;
+    color: rgba($color__white, 0.3);
+  }
+}
