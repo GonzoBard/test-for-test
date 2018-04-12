@@ -35,9 +35,79 @@
     <p class="order-form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset>
+      <ul class="order-form__list" aria-label="Список групп формы">
 
-      </fieldset>
+        <li class="form-group" aria-label="Группа «Тип»">
+          <ul class="form-group__list" aria-label="Список элементов группы">
+            <li class="form-group__item form-group__item--title">Тип</li>
+            <li class="form-group__item">
+              <input type="radio" name="order-type" value="accessory-for-interior" id="form-group__item-order-type--accessory-for-interior" checked>
+              <label for="form-group__item-order-type--accessory-for-interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="form-group__item">
+              <input type="radio" name="order-type" value="toy-for-children" id="form-group__item-order-type--toy-for-children">
+              <label for="form-group__item-order-type--toy-for-children">Детская игрушка</label>
+            </li>
+          </ul>
+        </li>
+
+        <li class="form-group" aria-label="Группа «Цвет»">
+          <ul class="form-group__list" aria-label="Список элементов группы">
+            <li class="form-group__item form-group__item--title">Цвет</li>
+            <li class="form-group__item">
+              <input type="checkbox" name="color[white]" id="form-group__item-color--white" checked>
+              <label for="form-group__item-color--white">Белый</label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="color[gray]" id="form-group__item-color--gray" checked>
+              <label for="form-group__item-color--gray">Серый</label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="color[tiffany]" id="form-group__item-color--tiffany">
+              <label for="form-group__item-color--tiffany">«Тиффани»</label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="color[black]" id="form-group__item-color--black">
+              <label for="form-group__item-color--black">Черный</label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="color[pink]" id="form-group__item-color--pink">
+              <label for="form-group__item-color--pink">Розовый</label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="color[orange]" id="form-group__item-color--orange">
+              <label for="form-group__item-color--orange">Оранжевый</label>
+            </li>
+          </ul>
+        </li>
+
+        <li class="form-group" aria-label="Группа «ФИО»">
+          <ul class="form-group__list" aria-label="Список элементов группы">
+            <li class="form-group__item form-group__item--title">ФИО</li>
+            <li class="form-group__item">
+              <label for="form-group__item-full-name--first-name">Имя:</label>
+              <input type="text" name="full-name[first-name]" placeholder="Введите ваше имя*" required id="form-group__item-full-name--first-name">
+            </li>
+            <li class="form-group__item">
+              <label for="form-group__item-full-name--last-name">Фамилия:</label>
+              <input type="text" name="full-name[last-name]" placeholder="Укажите фамилию*" required id="form-group__item-full-name--last-name">
+            </li>
+            <li class="form-group__item">
+              <label for="form-group__item-full-name--patronymic">Отчество:</label>
+              <input type="text" name="full-name[patronymic]" placeholder="Отчество, если желаете" id="form-group__item-full-name--patronymic">
+            </li>
+          </ul>
+        </li>
+
+        <li class="form-group" aria-label="Группа «»">
+          <ul class="form-group__list" aria-label="Список элементов группы">
+            <li class="form-group__item form-group__item--title"></li>
+            <li class="form-group__item"></li>
+          </ul>
+        </li>
+
+      </ul>
+
 
     </form>
 
