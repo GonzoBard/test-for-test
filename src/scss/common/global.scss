@@ -7,18 +7,18 @@ body {
   UTILS
 */
 
-//.visually-hidden { /* https://allyjs.io/tutorials/hiding-elements.html#2017-edition-of-visuallyhidden */
-//  position: absolute;
-//
-//  width: 1px;
-//  height: 1px;
-//  margin: -1px;
-//  border: 0;
-//  padding: 0;
-//
-//  white-space: nowrap;
-//
-//  clip-path: inset(100%);
-//  clip: rect(0 0 0 0);
-//  overflow: hidden;
-//}
+.visually-hidden { /* https://allyjs.io/tutorials/hiding-elements.html#2017-edition-of-visuallyhidden */
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
