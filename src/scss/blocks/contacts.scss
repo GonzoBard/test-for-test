@@ -1,7 +1,8 @@
 .contacts {
+  @include fonts(15px, 30px, 400, normal, $color-tundora);
+
   &__mail-link {
     border-bottom: 1px solid $color-downy;
-    @include fonts(17px, 30px, 400, normal, $color-tundora);
     text-decoration: none;
     &:hover,
     &:focus {
