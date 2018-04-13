@@ -4,6 +4,9 @@
   &__mail-link {
     border-bottom: 1px solid $color-downy;
     text-decoration: none;
+    &:visited{
+      color: $color-tundora;
+    }
     &:hover,
     &:focus {
       color: $color-puerto-rico;

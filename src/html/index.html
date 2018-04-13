@@ -38,11 +38,11 @@
     </ul>
   </section>
 
-  <section class="product-of-the-week">
+  <section class="week-product">
     <h3 class="visually-hidden">Товар недели</h3>
     <h3>Вязаные корзинки</h3>
-    <p class="product-of-the-week__label">Товар недели</p>
-    <div class="product-of-the-week__description">
+    <p class="week-product__label">Товар недели</p>
+    <div class="week-product__description">
       <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table>
         <tr>
@@ -59,11 +59,39 @@
         </tr>
       </table>
     </div>
-    <img class="product-of-the-week__pic" src="img/product-of-the-week__pic-knitted-baskets.jpg" alt="Вязаные корзинки" width="260" height="315">
-    <div class="product-of-the-week__buy">
-      <p class="product-of-the-week__price">Цена: 990 руб.</p>
+    <img class="week-product__pic" src="img/week-product__pic-knitted-baskets.jpg" alt="Вязаные корзинки" width="260" height="315">
+    <div class="week-product__buy">
+      <p class="week-product__price">Цена: 990 руб.</p>
       <button class="btn">Заказать</button>
     </div>
+  </section>
+
+  <section class="week-product-modal">
+    <h3 class="visually-hidden">Форма добавления товара недели в корзину</h3>
+    <h3>Добавить в корзину</h3>
+    <p>Выберите размер:</p>
+    <form class="form-add-product" action="https://echo.htmlacademy.ru" method="post">
+
+      <ul class="form-add-product__list" aria-label="Список размеров">
+
+        <li class="form-group-add-product" aria-label="Размер «s»">
+          <input type="radio" name="size" value="s" id="form-group-add-product__size-s" checked>
+          <label for="form-group-add-product__size-s">s</label>
+        </li>
+
+        <li class="form-group-add-product" aria-label="Размер «m»">
+          <input type="radio" name="size" value="m" id="form-group-add-product__size-m">
+          <label for="form-group-add-product__size-m">m</label>
+        </li>
+
+        <li class="form-group-add-product" aria-label="Размер «l»">
+          <input type="radio" name="size" value="l" id="form-group-add-product__size-l">
+          <label for="form-group-add-product__size-l">l</label>
+        </li>
+
+      </ul>
+      <button class="form-add-product__btn">Добавить</button>
+    </form>
   </section>
 
   <section class="advantages">

@@ -1,0 +1,5 @@
+.week-product-modal {
+  h3 {
+    @include fonts(25px, 30px, 700, normal, $color-black);
+  }
+}

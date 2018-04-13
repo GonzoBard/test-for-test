@@ -11,7 +11,9 @@
 @import 'blocks/site-nav';
 @import 'blocks/page-main';
 @import 'blocks/catalog-sections';
-@import 'blocks/product-of-the-week';
+@import 'blocks/week-product';
+@import 'blocks/week-product-modal';
+@import 'blocks/form-add-product';
 @import 'blocks/advantages';
 @import 'blocks/reviews';
 @import 'blocks/review-author';
@@ -24,8 +26,8 @@
 @import 'blocks/catalog-item';
 @import 'blocks/production-process';
 @import 'blocks/video';
-@import 'blocks/order-form';
-@import 'blocks/form-group';
+@import 'blocks/form-order';
+@import 'blocks/form-group-order';
 
 
 
