@@ -1,0 +1,98 @@
+.catalog-sections {
+
+  &__list {
+    @include resetlist();
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__item {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__a {
+    width: 100%;
+
+    padding-left: 28px;
+
+    @include fonts(20px, 30px, 700, normal, $color-white);
+    text-decoration: none;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.08s ease;
+
+    position: relative;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
+
+    &--accessory-for-interior {
+      $padding-top: 21px;
+      $padding-bottom: 20px;
+      $grow-size: 5px;
+
+      padding-top: $padding-top;
+      padding-bottom: $padding-bottom;
+
+      background-color: $color-viking;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      &:hover,
+      &:focus {
+        padding-bottom: $padding-bottom + $grow-size;
+        padding-top: $padding-top - $grow-size;
+        box-shadow: 0 -#{$grow-size} 0 0 $color-viking;
+      }
+      &::after {
+        content: '';
+        width: 40px;
+        height: 62px;
+        margin-left: auto;
+        margin-right: 30px;
+        background: $color-viking url('../img/catalog-sections__item-icon-bedside-night-light.svg') no-repeat 0 0;
+      }
+    }
+    &--toy-for-children {
+      $padding-top: 22px;
+      $padding-bottom: 21px;
+      $grow-size: 5px;
+
+      padding-top: $padding-top;
+      padding-bottom: $padding-bottom;
+
+      background-color: $color-puerto-rico;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      &:hover,
+      &:focus {
+        padding-bottom: $padding-bottom + $grow-size;
+        padding-top: $padding-top - $grow-size;
+        box-shadow: 0 -#{$grow-size} 0 0 $color-puerto-rico;
+      }
+      &::after {
+        content: '';
+        width: 60px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: 30px;
+        background: $color-puerto-rico url('../img/catalog-sections__item-icon-lego.svg') no-repeat 0 0;
+      }
+    }
+  }
+}

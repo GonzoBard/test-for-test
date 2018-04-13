@@ -1,5 +1,5 @@
 .a {
-  @include fonts(17px, 24px, 700, normal, $color__black);
+  @include fonts(17px, 24px, 700, normal, $color-black);
   text-decoration: none;
 
   cursor: pointer;
@@ -8,13 +8,13 @@
   &:hover,
   &:focus {
     outline: none;
-    color: rgba($color__black, 0.6);
+    color: rgba($color-black, 0.6);
   }
   &:active {
-    color: rgba($color__black, 0.3);
+    color: rgba($color-black, 0.3);
   }
 
   &--another-from-styleguide {
-    @include fonts(15px, 24px, 700, normal, $color__black);
+    @include fonts(15px, 24px, 700, normal, $color-black);
   }
 }

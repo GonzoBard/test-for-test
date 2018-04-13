@@ -1,6 +1,7 @@
 body {
+  min-width: 320px;
   font-family: 'Open Sans', Arial, sans-serif;
-  @include fonts(15px, normal, 400, normal, $color__font-body);
+  @include fonts(15px, normal, 400, normal, $color-tundora);
 }
 
 /*

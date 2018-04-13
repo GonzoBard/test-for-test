@@ -3,10 +3,10 @@
   vertical-align: middle;
   padding: 16px 20px;
 
-  border: 2px solid $color__font-body;
-  background-color: $color__white;
+  border: 2px solid $color-tundora;
+  background-color: $color-white;
 
-  @include fonts(17px, 20px, 700, normal, $color__font-body);
+  @include fonts(17px, 20px, 700, normal, $color-tundora);
   text-decoration: none;
   text-transform: uppercase;
 
@@ -16,11 +16,11 @@
   &:hover,
   &:focus {
     outline: none;
-    background-color: $color__font-body;
-    color: $color__white;
+    background-color: $color-tundora;
+    color: $color-white;
   }
   &:active {
-    background-color: $color__font-body;
-    color: rgba($color__white, 0.3);
+    background-color: $color-tundora;
+    color: rgba($color-white, 0.3);
   }
 }
