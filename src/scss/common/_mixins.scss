@@ -11,3 +11,31 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin catalog-section($padding-top, $padding-bottom, $grow-size, $color, $icon-w, $icon-h, $icon-url) {
+
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+
+  background-color: $color;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    padding-bottom: $padding-bottom + $grow-size;
+    padding-top: $padding-top - $grow-size;
+    box-shadow: 0 -#{$grow-size} 0 0 $color;
+  }
+  &::after {
+    content: '';
+    width: $icon-w;
+    height: $icon-h;
+    margin-left: auto;
+    margin-right: 30px;
+    background: $color url($icon-url) no-repeat 0 0;
+  }
+}

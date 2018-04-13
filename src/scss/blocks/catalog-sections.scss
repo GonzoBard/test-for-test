@@ -39,62 +39,10 @@
     }
 
     &--accessory-for-interior {
-      $padding-top: 21px;
-      $padding-bottom: 20px;
-      $grow-size: 5px;
-
-      padding-top: $padding-top;
-      padding-bottom: $padding-bottom;
-
-      background-color: $color-viking;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-
-      &:hover,
-      &:focus {
-        padding-bottom: $padding-bottom + $grow-size;
-        padding-top: $padding-top - $grow-size;
-        box-shadow: 0 -#{$grow-size} 0 0 $color-viking;
-      }
-      &::after {
-        content: '';
-        width: 40px;
-        height: 62px;
-        margin-left: auto;
-        margin-right: 30px;
-        background: $color-viking url('../img/catalog-sections__item-icon-bedside-night-light.svg') no-repeat 0 0;
-      }
+      @include catalog-section(21px, 20px, 5px, $color-viking, 40px, 62px, '../img/catalog-sections__item-icon-bedside-night-light.svg');
     }
     &--toy-for-children {
-      $padding-top: 22px;
-      $padding-bottom: 21px;
-      $grow-size: 5px;
-
-      padding-top: $padding-top;
-      padding-bottom: $padding-bottom;
-
-      background-color: $color-puerto-rico;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-
-      &:hover,
-      &:focus {
-        padding-bottom: $padding-bottom + $grow-size;
-        padding-top: $padding-top - $grow-size;
-        box-shadow: 0 -#{$grow-size} 0 0 $color-puerto-rico;
-      }
-      &::after {
-        content: '';
-        width: 60px;
-        height: 60px;
-        margin-left: auto;
-        margin-right: 30px;
-        background: $color-puerto-rico url('../img/catalog-sections__item-icon-lego.svg') no-repeat 0 0;
-      }
+      @include catalog-section(22px, 21px, 5px, $color-puerto-rico, 60px, 60px, '../img/catalog-sections__item-icon-lego.svg');
     }
   }
 }
