@@ -18,7 +18,6 @@
   }
   &__a {
     width: 100%;
-
     padding-left: 28px;
 
     @include fonts(20px, 30px, 700, normal, $color-white);
@@ -28,7 +27,10 @@
     user-select: none;
     transition: all 0.08s ease;
 
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
     &:hover,
     &:focus {
@@ -36,6 +38,10 @@
     }
     &:active {
       color: rgba($color-white, 0.3);
+    }
+
+    &::after {
+      margin-right: 30px;
     }
 
     &--accessory-for-interior {

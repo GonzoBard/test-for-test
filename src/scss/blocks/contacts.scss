@@ -1,0 +1,16 @@
+.contacts {
+  &__mail-link {
+    border-bottom: 1px solid $color-downy;
+    @include fonts(17px, 30px, 400, normal, $color-tundora);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $color-puerto-rico;
+      border-bottom-color: $color-puerto-rico;
+    }
+    &:active {
+      color: rgba($color-puerto-rico, 0.3);
+      border-bottom-color: rgba($color-puerto-rico, 0.3);
+    }
+  }
+}

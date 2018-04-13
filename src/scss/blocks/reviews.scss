@@ -1,0 +1,8 @@
+.reviews {
+  &__list {
+    @include resetlist();
+  }
+  &__text {
+    @include fonts(15px, 30px, 400, normal, $color-tundora);
+  }
+}

@@ -1,1 +1,17 @@
-
+.product-of-the-week {
+  &__label {
+    @include fonts(17px, 20px, 700, normal, $color-downy);
+    text-transform: uppercase;
+  }
+  &__description {
+    p {
+      @include fonts(15px, 24px, 400, normal, $color-tundora);
+    }
+    table {
+      @include fonts(15px, 20px, 400, normal, $color-tundora);
+    }
+  }
+  &__price {
+    @include fonts(17px, 24px, 700, normal, $color-tundora);
+  }
+}

@@ -1,0 +1,8 @@
+.advantages {
+  &__list {
+    @include resetlist();
+  }
+  &__item {
+    @include fonts(17px, 20px, 700, normal, $color-black);
+  }
+}

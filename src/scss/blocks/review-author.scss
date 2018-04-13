@@ -1,0 +1,12 @@
+.review-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__name {
+    @include fonts(17px, 24px, 700, normal, $color-black);
+  }
+  &__contact {
+    @include fonts(17px, 30px, 400, normal, $color-tundora);
+  }
+}

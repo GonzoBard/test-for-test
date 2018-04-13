@@ -1,0 +1,8 @@
+.page-main {
+  h2 {
+    @include fonts(27px, 30px, 700, normal, $color-diesel);
+  }
+  h3 {
+    @include fonts(25px, 30px, 700, normal, $color-black);
+  }
+}
