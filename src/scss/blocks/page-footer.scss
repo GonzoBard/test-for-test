@@ -1,8 +1,19 @@
 .page-footer {
+  padding: 30px;
+
   background-color: $color-seashell;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  &__hr {
+    width: 200px;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: $color-mercury;
+  }
 }
