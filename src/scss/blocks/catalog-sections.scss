@@ -51,6 +51,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
+
       &:hover,
       &:focus {
         padding-bottom: $padding-bottom + $grow-size;
@@ -79,6 +80,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
+
       &:hover,
       &:focus {
         padding-bottom: $padding-bottom + $grow-size;
